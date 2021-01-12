@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+    <script
+      src="https://kit.fontawesome.com/641ce4cc5f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="id-card" class="card">
+      <img class="logo" src="SMAN-Logo.png" width="80">
+      <div class="container">
+        <p class="bold">STINGY MEN ASSOCIATION OF NIGERIA</p>
+        <p class="crimson">Motto: Let Me See What I Can Do</p>
+        <p class="bold">IDENTITY CARD</p>
+      </div>
+
+      <img class="stamp" src="stamp.jpg" />
+      <!-- <img class="stamp" src="stamp.png"> -->
+      <div class="box">
+        <div class="details">
+          <p>Name: <span class="mg-left" id="id-card-name">ADERIBIGBE AKEEM ADEBAYO</span></p>
+          <p>Position: <span class="mg-left" id="id-position"></span></p>
+          <p>Branch: <span class="mg-left" id="id-branch"></span></p>
+          <p>ID No: <span class="mg-left" id="id-no"></span></p>
+        </div>
+
+        <div class="mugshot">
+          <img
+            id="id-card-mugshot"
+            width="150"
+            height="150"
+            class="mugshot-img"
+            src="empty-avatar.png"
+            alt="id-image"
+          />
+        </div>
+      </div>
+
+      <footer>
+        <p class="crimson">ID card optainable from www.adebayoade.com/sman/</p>
+      </footer>
+    </div>
+
+    <br />
+
+    <form id="form"> 
+      <div class="form-group">
+        <label name="name" for="name">Name: </label>
+        <input type="text" id="name" required/>
+      </div>
+
+      <div class="form-group">
+        <label name="position" for="position">Position: </label>
+        <input type="text" id="position" required/>
+      </div>
+
+      <div class="form-group">
+        <label name="branch" for="branch">Branch: </label>
+        <input type="text" id="branch" required/>
+      </div>
+
+      <div class="form-group">
+        <label name="email" for="email">Email: </label>
+        <input type="text" id="email" required/>
+      </div>
+
+      <div class="form-group">
+        <label name="email" for="phonenumber">Phone number: </label>
+        <input type="text" id="phonenumber" required/>
+      </div>
+
+      <div class="form-group">
+        <label name="position">Passport: </label>
+        <input id="mugshot" type="file" accept="image/*" />
+      </div>
+
+      <!-- <button id="download-button" class="btn" type="submit">Download ID</button> -->
+      <input id="download-button" class="btn" type="submit"> 
+    </form>
+
+    <!-- <a id="download-button" class="btn download"><i class="fas fa-file m-x1"></i> Download ID</a> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
